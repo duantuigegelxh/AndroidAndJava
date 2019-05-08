@@ -76,8 +76,7 @@ public class LoginServlet extends HttpServlet {
 		String phoneNumber = request.getParameter(User.PHONENUMBER);
 		String passWord = request.getParameter(User.PASSWORD);
 
-		//这个跳转的方式，然后
-		request.getRequestDispatcher("index.jsp").forward(request,response);
+		
 		//这个是初始化这个UserDao类，会先调用无参构造器
 		UserDAO userDAO = new UserDAO();
 
